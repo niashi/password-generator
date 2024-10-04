@@ -10,6 +10,6 @@ A simple component that generates random passwords and accepts three parameters:
 
 ## Future improvements
 
-- [ ] Change the notification style. The ideia is to create a modern and minimalistic toast like the following:
+- [ ] Change the notification style. The idea is to create a modern and minimalistic toast like the following:
 
 ![alt text](image-1.png)

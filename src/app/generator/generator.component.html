@@ -1,0 +1,68 @@
+<h1 style="text-align: center; margin-top: 0; margin-bottom: 0">
+  Password Generator
+</h1>
+
+<div class="generator-container">
+  <!-- Opções para personalizar a senha -->
+  <div class="output">
+    <!-- Exibe a senha gerada através do binding da propriedade value com a generatedPassword. -->
+    <input class="input" type="text" [value]="generatedPassword" readonly />
+    <button (click)="copyPassword()" style="cursor: pointer">Copiar</button>
+  </div>
+
+  <!-- Opções para personalizar a senha -->
+  <div class="options">
+    <label class="slider">
+      <span>Length:</span>
+      <input
+        type="range"
+        (change)="changePasswordLength($event)"
+        (change)="generatePassword()"
+        [value]="passwordLength"
+        min="4"
+        max="20"
+      />
+      <input
+        class="password-length"
+        type="number"
+        [value]="passwordLength"
+        readonly
+        min="4"
+        max="20"
+      />
+    </label>
+
+    <div class="constraints">
+      <label>
+        <input
+          class="constraint-input"
+          type="checkbox"
+          [(ngModel)]="gotUppercase"
+        />
+        Include Uppercase
+      </label>
+      <label>
+        <input
+          class="constraint-input"
+          type="checkbox"
+          [(ngModel)]="gotNumbers"
+        />
+        Include Numbers
+      </label>
+      <label>
+        <input
+          class="constraint-input"
+          type="checkbox"
+          [(ngModel)]="gotSymbols"
+        />
+        Include Symbols
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- Alert customizado -->
+<div class="custom-alert" *ngIf="showAlert && generatedPassword">
+  <p>Password copied to clipboard!</p>
+  <button (click)="closeAlert()">OK</button>
+</div>

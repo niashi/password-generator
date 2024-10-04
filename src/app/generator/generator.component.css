@@ -1,0 +1,92 @@
+.generator-container {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    /* border: 3px solid black; */
+    border-radius: 10px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.output {
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+span {
+    margin-right: 10px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.password-length {
+    border: none;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: default;
+    width: 45px;
+    margin: none;
+    padding: none;
+}
+
+/* .constraints {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.constraint-input {
+    margin: 5px;
+} */
+
+.constraints label {
+    display: flex;
+    align-items: flex;
+}
+
+.constraint-input {
+    margin-right: 8px; /* Espaço entre o checkbox e o texto */
+}
+
+.custom-alert {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #45a04925;
+    color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.custom-alert button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.custom-alert button:hover {
+    background-color: #45a049;
+}
